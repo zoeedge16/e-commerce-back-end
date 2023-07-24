@@ -62,8 +62,8 @@ router.delete('/:id', (req, res) => {
       id: req.params.id
     },
   })
-    .then((deletedBook) => {
-      res.json(deletedBook);
+    .then((deletedCategory) => {
+      res.json(deletedCategory);
     })
     .catch((err) => res.json(err));
 
