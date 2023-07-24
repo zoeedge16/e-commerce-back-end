@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Category, Product } = require('../../models');
+const { Category, Product } = require('../../models/Category');
 
 // The `/api/categories` endpoint
 
@@ -59,9 +59,7 @@ router.delete('/:id', (req, res) => {
     .then((deletedBook) => {
       res.json(deletedBook);
     })
-    .catch((err) => {
-      res.json(err);
-    })
+    .catch((err) => res.json(err));
 
 });
 
