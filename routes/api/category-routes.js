@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Category, Product } = require('../../Develop/models');
+const { Category, Product } = require('../../models');
 
 // The `/api/categories` endpoint
 
@@ -51,6 +51,18 @@ router.put('/:id', (req, res) => {
 
 router.delete('/:id', (req, res) => {
   // delete a category by its `id` value
+  Category.destroy({
+    where: {
+      id: req.params.id
+    },
+  })
+    .then((deletedBook) => {
+      res.json(deletedBook);
+    })
+    .catch((err) => {
+      res.json(err);
+    })
+
 });
 
 module.exports = router;
