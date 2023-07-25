@@ -18,4 +18,9 @@ THEN I am able to successfully create, update, and delete data in my database
 [Repository](https://github.com/zoeedge16/e-commerce-back-end)
 
 ## Walk-through
+
+
 [Walk-through Video](https://drive.google.com/file/d/15xMyYZo9EGGga_znYKR1t4roNPcJmObp/view?usp=drive_link)
+
+
+[Walk-through Video Part 2](https://drive.google.com/file/d/167HIXStdFsacEGkCq15fvrYzAeUsVTGr/view?usp=drive_link)
